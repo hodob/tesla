@@ -1,0 +1,191 @@
+#fullpage.no-scroll {
+  overflow-y: hidden;
+  max-height: 100vh;
+}
+
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section.one {
+  background-image: url(../media/1-1.jfif);
+  /* background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/0x0/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0); */
+}
+
+.section.two {
+  background-image: url(../media/2-1.jfif);
+  /* background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD); */
+}
+
+.section.three {
+  background-image: url(../media/3-1.jfif);
+  /* background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ddc135ed-1638-40fb-8ab1-f8045059ecef/bvlatuR/std/4096x2560/Homepage-Model-X-Desktop-LHD); */
+}
+
+.section.four {
+  /* background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/538ac149-d103-4834-9d38-641d8ae447ef/bvlatuR/std/4096x2560/Homepage-Model-S-Desktop-LHD); */
+  background-image: url(../media/4-1.jfif);
+}
+
+.section.five {
+  background-image: url(../media/5-1.jfif);
+  /* background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/27d0055c-b0bf-476c-b3aa-ec59d314f871/bvlatuR/std/0x0/27d0055c-b0bf-476c-b3aa-ec59d314f871); */
+}
+
+.section_content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.section_content_title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.section_content_title {
+  animation-name: title_ani;
+  animation-duration: 2s;
+}
+
+@keyframes title_ani {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.section_content_subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  animation-name: subtitle_ani;
+  animation-duration: 3s;
+
+}
+
+@keyframes subtitle_ani {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  66% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.section_content_subtitle a {
+  color: inherit;
+  width: 50px;
+  border-bottom: 1px solid;
+  padding-bottom: -1px;
+}
+
+.section_content_subtitle a:hover {
+  width: 50px;
+  border-bottom: 2px solid;
+  padding-bottom: -1px;
+
+}
+
+.section_content_subtitle a:hover {
+  /* text-decoration: underline; */
+}
+
+.five .section_content_subtitle {
+  text-decoration: none;
+}
+
+.section_action_container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section_action_btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 2rem;
+  flex-basis: 80%;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.action_btn_primary {
+  background: rgba(23, 26, 42, 0.8);
+  color: white;
+  animation-name: btn_primary_ani;
+  animation-duration: 3s;
+}
+
+@keyframes btn_primary_ani {
+  0% {
+    opacity: 0;
+    transform: translatex(-35%);
+  }
+
+  66% {
+    opacity: 0;
+    transform: translatex(-35%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatex(0%);
+  }
+}
+
+.action_btn_secondary {
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--primary-color);
+  animation-name: btn_secondary_ani;
+  animation-duration: 3s;
+}
+
+@keyframes btn_secondary_ani {
+  0% {
+    opacity: 0;
+    transform: translatex(35%);
+  }
+
+  66% {
+    opacity: 0;
+    transform: translatex(35%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatex(0%);
+  }
+}

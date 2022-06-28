@@ -1,0 +1,110 @@
+ .header {
+   height: 5rem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 5;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+
+ .header_middle {
+   display: flex;
+   align-items: center;
+ }
+
+ .header_left {
+   display: block;
+   overflow: hidden;
+   padding: 0 2rem;
+ }
+
+ .header_logo {
+   height: 100%;
+   width: 13rem;
+ }
+
+ .header_right {
+   margin: auto 0;
+   margin-right: 1rem;
+ }
+
+ .header_nav_btn {
+   display: none;
+   font-size: 1.4rem;
+   font-weight: bold;
+   padding: 1rem;
+   color: var(--secondary-color);
+   border-radius: 1.5rem;
+   text-transform: capitalize;
+   transition: background 0.3s linear;
+ }
+
+ .header_nav_btn:hover {
+   background: rgba(0, 0, 0, 0.08);
+ }
+
+ .header_nav_btn.menu_btn {
+   display: inline-block;
+ }
+
+ .header_middle .header_nav_btn {
+   margin-right: 2rem;
+ }
+
+ .header_left,
+ .header_middle,
+ .header_right {
+   animation-name: header_nav;
+   animation-duration: 1s;
+ }
+
+ @keyframes header_nav {
+   0% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+   }
+ }
+
+ .add_header {
+   border-bottom: 1px solid;
+   padding: 10px;
+ }
+
+ .iv {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .fa-globe {
+   padding: 5px;
+ }
+
+ .header_add {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   width: 100%;
+   z-index: 10;
+   /* margin: 15PX; */
+   padding: 15px;
+   background-color: #ffffff;
+   font-size: 15px;
+   margin-bottom: 25PX;
+ }
+
+ .header_add_text a {
+   color: inherit;
+   border-bottom: 1px solid;
+   text-align: center;
+   justify-content: center;
+ }
+
+ .header_add_text a:hover {
+   border-bottom: 2px solid;
+ }
