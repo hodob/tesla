@@ -61,3 +61,25 @@
 		width: 50%;
 	}
 }
+
+@media (max-width: 600px) {
+	.footer {
+		max-width: 100%;
+		background-color: black;
+		align-self: flex-end;
+		padding-bottom: 0px;
+	}
+
+	.footer_add {
+		max-width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.fotter ul {
+		flex-wrap: nowrap;
+	}
+
+	.section_action_container {
+		bottom: 20%;
+	}
+}
