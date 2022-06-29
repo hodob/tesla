@@ -38,20 +38,3 @@
   font-size: 80%;
 }
 
-@media (max-width: 600px) {
-  .footer {
-    max-width: 100%;
-    background-color: black;
-    align-self: flex-end;
-    padding-bottom: 0px;
-  }
-
-  .footer_add {
-    max-width: 100%;
-    padding-bottom: 30px;
-  }
-
-  .fotter ul {
-    flex-wrap: nowrap;
-  }
-}
